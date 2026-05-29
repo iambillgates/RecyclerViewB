@@ -119,7 +119,9 @@ public class MainActivity extends AppCompatActivity
         _addButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), addMahasiswaActivity.class);
 
+                startActivity(intent);
                 loadRecyclerView();
             }
         });
